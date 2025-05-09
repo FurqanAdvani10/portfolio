@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ 
+}
+body{
+   background-color: #0f0f0f;
+   color: #ffff;
+}
+
+.section-padding {
+  padding-block: 80px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.bg-none {
+  background: none !important;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+:root {
+  --sub-heading-bg: #f5efff;
+  --sub-heading-txt: white;
+  --btn-bg: #656666;
+  --text-color : rgb(156, 156, 156);
+  --bg-gradient: linear-gradient(90deg, #2f2f2f, #1a1a1a);
+  --inner-gradient: linear-gradient(90deg,rgba(53, 57, 59, 1) 0%, rgba(168, 168, 168, 1) 50%, rgba(84, 84, 84, 1) 100%);
+  --them-sec: #EDD8FF;
+}
+
+
+.card-body{
+  height: 240px;
+  border-radius: 18px;
+  padding: 30px;
+  background: var(--bg-gradient);
+  justify-content: center;
+}
+
+.card-content-with-icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-arrow-icon{
+  font-size: 30px;
+  color: rgb(64, 64, 250);
+}
+
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-block: 50px;
+  }
+
+  .heading-with-sub h5 {
+    font-size: 14px;
+  }
+
+  .heading-with-sub h2 {
+    font-size: 26px;
+    padding-top: 7px !important;
+  }
+
+  .heading-with-sub p {
+    font-size: 13px;
+    padding-top: 7px !important;
+  }
+}

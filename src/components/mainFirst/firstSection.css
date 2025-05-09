@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+.fs-section {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Left Profile Card */
+.fs-profile-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    background: var(--bg-gradient);
+    border-radius: 16px;
+    padding: 35px;
+}
+
+.fs-profile-img {
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+    background-color: #fff;
+    border-top-right-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.fs-profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fs-profile-content {
+    flex: 1;
+}
+
+.fs-role {
+    font-size: 16px;
+    color: #aaa;
+    margin: 0;
+}
+
+.fs-name {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin: 5px 0 10px;
+}
+
+.fs-description {
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+/* Welcome Text */
+.fs-welcome-text {
+    padding: 16px;
+    background: var(--bg-gradient);
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.fs-welcome-text p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.fs-welcome-text span {
+    color: #f1f1f1;
+    font-weight: 700;
+}
+
+/* Cards */
+.fs-card {
+    padding: 25px 20px;
+    height: 200px;
+    align-items: center;
+    background: var(--bg-gradient);
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.fs-card:hover {
+    transform: translateY(-5px);
+}
+
+.hover-shadow {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.fs-card-icon {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.fs-card-icon h4 {
+    font-size: 50px;
+    rotate: 350deg;
+    font-family: "Water Brush", cursive;
+}
+
+.fs-card-icon > svg {
+    font-size: 60px;
+    stroke: #fff;
+    stroke-width: 1.5;
+    fill: none;
+}
+
+.fs-card-body {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.fs-card-text h3 {
+    font-size: 13px;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.fs-card-text h4 {
+    font-size: 17px;
+    color: #fff;
+}
+
+.fs-card-arrow {
+    font-size: 22px;
+    color: #ccc;
+}
+
+
+
+@media (max-width: 768px) {
+    .fs-profile-img {
+        width: 100%;
+    }
+}

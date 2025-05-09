@@ -1,0 +1,79 @@
+.sc-card {
+    background: var(--bg-gradient);
+    padding: 30px 25px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 240px;
+    /* Ensure all cards are same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hover-effect:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sc-multi-icons {
+    margin-top: 30px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.sc-multi-icons>i,
+.sc-icon-box>i {
+    font-size: 45px;
+    font-weight: 100 !important;
+    /* stroke-width: 1.1; */
+    color: #fff;
+}
+
+.sc-text-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+}
+
+.sc-text-box h3 {
+    font-size: 13px;
+    color: #ccc;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.sc-text-box h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.sc-arrow-icon {
+    font-size: 24px;
+    color: #ccc;
+    transition: transform 0.3s ease;
+}
+
+.sc-card:hover .sc-arrow-icon {
+    transform: translateX(5px);
+}
+
+.sc-icon-box {
+    margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+
+    .sc-multi-icons>svg,
+    .sc-icon-box>svg {
+        font-size: 32px;
+    }
+}

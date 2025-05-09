@@ -1,0 +1,212 @@
+.about-left-card {
+    width: 100%;
+    min-height: 550px;
+    background: var(--bg-gradient);
+    border-radius: 20px;
+    padding: 25px;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.about-card-img-container {
+    width: 100%;
+    height: 260px;
+    border-radius: 22px;
+    overflow: hidden;
+    background-color: #fff;
+    border-top-right-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    /* animation-delay: 0.4s; */
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.about-card-content-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+
+    h3 {
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 5px !important;
+        opacity: 0;
+        animation: fadeInUp 0.8s ease forwards;
+        animation-delay: 0.8s;
+    }
+
+    h5 {
+        font-size: 14px;
+        color: rgb(155, 155, 155);
+        opacity: 0;
+        animation: fadeInUp 0.8s ease forwards;
+        animation-delay: 0.9s;
+    }
+
+    .about-card-icons {
+        margin-block: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        opacity: 0;
+        animation: fadeInUp 0.8s ease forwards;
+        animation-delay: 1s;
+
+        i {
+            cursor: pointer;
+            border: 2px solid rgb(71, 71, 71);
+            background: var(--bg-gradient);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            fill: none;
+            stroke-width: 1.3;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            font-size: 26px;
+        }
+    }
+
+    button {
+        padding: 8px;
+        background-color: var(--btn-bg);
+        border: none;
+        border-radius: 15px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+        opacity: 0;
+        animation: fadeInUp 0.8s ease forwards;
+        animation-delay: 1s;
+    }
+}
+
+
+.about-me-container {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+
+    h4 {
+        margin-bottom: 30px !important;
+        font-size: 23px;
+    }
+
+    p {
+        margin-block: 20px !important;
+        font-size: 14px;
+        opacity: 0;
+        animation: fadeInUp 0.8s ease forwards;
+        color: rgb(168, 168, 168);
+    }
+}
+
+.about-me-container p:nth-of-type(1) {
+    animation-delay: 0.4s;
+}
+
+.about-me-container p:nth-of-type(2) {
+    animation-delay: 0.6s;
+}
+
+.about-me-container p:nth-of-type(3) {
+    animation-delay: 0.8s;
+}
+
+.about-me-container p:nth-of-type(4) {
+    animation-delay: 1s;
+}
+
+.about-me-container p:nth-of-type(5) {
+    animation-delay: 1.2s;
+}
+
+.about-me-container p:nth-of-type(6) {
+    animation-delay: 1.4s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+@keyframes fillProgress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: var(--progress-width);
+    }
+}
+
+.skills-section {
+    padding: 40px 0px;
+}
+
+.skills-heading {
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+    color: #d5d5d5;
+    margin-bottom: 30px;
+    text-align: start;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    color: #e9e9e9;
+}
+
+.progress-bar {
+    :where(.css-dev-only-do-not-override-1v5z42l).ant-progress .ant-progress-inner {
+        background-color: #fff;
+    }
+
+    :where(.css-dev-only-do-not-override-1v5z42l).ant-progress .ant-progress-text.ant-progress-text-outer {
+        color: #fff;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .about-me-container{
+        margin-top: 30px;
+    }
+}

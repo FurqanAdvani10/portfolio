@@ -1,0 +1,161 @@
+/* Left side cards */
+.services-left-cards {
+    background: var(--bg-gradient);
+    padding: 40px;
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 63px;
+  }
+  
+  /* Individual card */
+  .services-left-card {
+    flex: 1 1 240px;
+    padding: 20px;
+    border: 1px solid #626262;
+    background: var(--bg-gradient);
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  /* Hover effect for service cards */
+  .services-left-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Icon styles */
+  .services-left-icon i {
+    font-size: 28px;
+    color: #fff;
+  }
+  
+  /* Service content heading */
+  .services-left-content h4 {
+    font-size: 20px;
+    color: rgb(200, 200, 200);
+    margin: 0;
+  }
+  
+  /* Heading for services section */
+  .services-heading {
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .services-heading i {
+    font-size: 40px;
+    color: #626262;
+  }
+  
+  .services-heading h4 {
+    font-size: 40px;
+  }
+  
+  /* Right section for detailed services content */
+  
+  .services-right-card {
+    background: var(--bg-gradient);
+    padding: 20px;
+    border: 1px solid #626262;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  /* Text content inside service details */
+  .services-right-content h4 {
+    font-size: 24px;
+    color: rgb(200, 200, 200);
+  }
+  
+  .services-right-content p {
+    font-size: 16px;
+    color: #ddd;
+    margin-top: 10px;
+  }
+  
+  /* Hover effect for social media card */
+  .social-card:hover,
+  .work-card:hover,
+  .info-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .social-icons-box {
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    color: #fff;
+  }
+  
+  .social-bottom,
+  .work-card-content,
+  .info-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+  }
+  
+  .social-text h3,
+  .social-text h4,
+  .work-heading h2,
+  .info-text h3,
+  .info-text h4 {
+    margin: 0;
+  }
+  
+  .arrow-icon {
+    font-size: 24px;
+    color: #626262;
+  }
+  
+  @media (max-width: 768px) {
+    .services-left-cards {
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0;
+      padding: 20px;
+    }
+  
+    .services-right-section{
+      margin-top: 40px;
+      padding: 0px;
+    }
+    .services-left-card {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  
+    .services-heading h4 {
+      font-size: 30px;
+    }
+  
+  }
+  
+  /* Add fade-in-up animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+
