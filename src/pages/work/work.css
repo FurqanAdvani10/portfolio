@@ -38,8 +38,11 @@
     font-weight: 600;
     color: #fff;
   }
+  .work-card-icon > a{
+    text-decoration: none;
+  }
   
-  .work-card-icon > i {
+  .work-card-icon > a > i {
     font-size: 26px;
     color: #fff;
     padding: 10px;

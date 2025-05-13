@@ -4,31 +4,36 @@ import './experience.css'; // CSS for styling and animations
 const items = [
   {
     id: 1,
-    years: '2020-2022',
+    years: 'Apr 2024 -  (Present)',
     designation: 'Front-End Engineer',
     company: 'KamelPay',
-    work: 'Worked on multiple React projects, building scalable UIs and integrating APIs with Firebase auth and Firestore.',
+    work: [
+      { item: 'Built and optimized interactive web interfaces using React and Tailwind CSS.' },
+      { item: 'Integrated REST APIs for dynamic data rendering and real-time updates.' },
+      { item: 'Collaborated in a cross-functional team of 5+ developers using Git and agile methodologies.' },
+    ],
   },
   {
     id: 2,
-    years: '2019-2020',
+    years: 'Nov 2023 - Apr 2024',
     designation: 'Trainee Front-End Engineer',
     company: 'KamelPay',
-    work: 'Learned core front-end technologies including React, Redux, HTML, and SCSS while contributing to internal tools.',
+    work: [
+      { item: 'Developed responsive UI/UX web pages with HTML5, CSS3/SASS, and JavaScript.' },
+      { item: 'Improved layout consistency and ensured cross-browser compatibility.' },
+      { item: 'Contributed to building components for real-world use cases.' },
+    ],
   },
   {
     id: 3,
     years: '2018-2019',
     designation: 'Front-End Engineer',
     company: 'CIS (Computer Information Systems)',
-    work: 'Built UI components and collaborated with backend engineers to deliver high-performance web apps.',
-  },
-  {
-    id: 4,
-    years: '2017-2018',
-    designation: 'Operation Manager',
-    company: 'Karwan-e-Rafeeq ul Harmain',
-    work: 'Managed operations and led digital transition for booking and customer experience.',
+    work: [
+      { item: 'Designed custom UI components for desktop apps using C# (WinForms/WPF).' },
+      { item: 'Focused on creating clean, intuitive, and scalable interfaces.' },
+      { item: 'Collaborated with design and development teams for effective UX workflows.' },
+    ],
   },
 ];
 
@@ -46,7 +51,14 @@ const Experience = () => {
             <span className="years">{item.years}</span>
             <h3>{item.designation}</h3>
             <h5>{item.company}</h5>
-            <p>{item.work}</p>
+            <ul>
+              {Array.isArray(item.work) &&
+                item.work.map((workItem, i) => (
+                  <li key={i}>
+                    <i>{workItem.item}</i>
+                  </li>
+                ))}
+            </ul>
           </div>
         ))}
       </div>

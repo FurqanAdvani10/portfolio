@@ -40,10 +40,10 @@ const About = () => {
                   <h3 className='p-0 m-0'>Furqan Advani</h3>
                   <h5 className='p-0 m-0'>@furqanadvani</h5>
                   <div className="about-card-icons">
-                    <i class="ri-facebook-fill"></i>
-                    <i class="ri-github-line"></i>
-                    <i class="ri-instagram-line"></i>
-                    <i class="ri-linkedin-box-line"></i>
+                    <i className="ri-facebook-fill"></i>
+                    <i className="ri-github-line"></i>
+                    <i className="ri-instagram-line"></i>
+                    <i className="ri-linkedin-box-line"></i>
                   </div>
                   <button>Get in touch</button>
                 </div>
@@ -53,12 +53,11 @@ const About = () => {
           <div className="col-md-8">
             <div className="about-me-container">
               <h4 className='p-0 m-0'>ABOUT ME</h4>
-              <p className='p-0 m-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veniam officiis id sed quas perferendis, reprehenderit cumque nulla aliquam. Consectetur qui sapiente porro sed sit tenetur cupiditate quidem, nisi aliquid.</p>
-              <p className='p-0 m-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veniam officiis id sed quas perferendis, reprehenderit cumque nulla aliquam. Consectetur qui sapiente porro sed sit tenetur cupiditate quidem, nisi aliquid.</p>
-              <p className='p-0 m-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veniam officiis id sed quas perferendis, reprehenderit cumque nulla aliquam. Consectetur qui sapiente porro sed sit tenetur cupiditate quidem, nisi aliquid.</p>
-              <p className='p-0 m-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veniam officiis id sed quas perferendis, reprehenderit cumque nulla aliquam. Consectetur qui sapiente porro sed sit tenetur cupiditate quidem, nisi aliquid.</p>
-              <p className='p-0 m-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veniam officiis id sed quas perferendis, reprehenderit cumque nulla aliquam. Consectetur qui sapiente porro sed sit tenetur cupiditate quidem, nisi aliquid.</p>
-              <p className='p-0 m-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veniam officiis id sed quas perferendis, reprehenderit cumque nulla aliquam. Consectetur qui sapiente porro sed sit tenetur cupiditate quidem, nisi aliquid.</p>
+              <p className='p-0 m-0'>I’m a passionate Front-End Engineer with over 3 years of industry experience, building responsive and modern user interfaces for both web and desktop applications. My journey includes working with companies like KamelPay and CIS, where I delivered high-quality front-end solutions using React, Tailwind CSS, JavaScript, and C# (WinForms/WPF).</p>
+              <p className='p-0 m-0'>I hold a professional certification in Web and Mobile App Development, where I graduated with excellent grades. This course laid a strong foundation in both front-end and full-stack concepts, empowering me to work confidently on real-world projects and understand the full development lifecycle.</p>
+              <p className='p-0 m-0'>Throughout my career, I’ve focused on writing clean, reusable code, integrating REST APIs, and creating seamless user experiences. I enjoy working in agile teams, collaborating with developers, designers, and product owners to ship impactful features and interfaces.</p>
+              <p className='p-0 m-0'>Beyond code, I’m an energetic individual who enjoys traveling, adventures, and exploring new ideas. I believe that creativity outside the screen feeds innovation inside it — whether it's discovering new places or learning a new tool.</p>
+              <p className='p-0 m-0'>Looking ahead, I aim to become a full-stack developer and work on dynamic, large-scale applications that challenge my skills and expand my learning. I’m always curious, open to feedback, and committed to growing both personally and professionally.</p>
             </div>
 
             <Experience />

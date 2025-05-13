@@ -49,8 +49,10 @@
     font-size: 13px;
     color: #777;
   }
-  
-  .experience-card p {
+  .experience-card > ul > li {
+    
+  }
+  .experience-card > ul > li  {
     font-size: 15px;
     color: #cccccc;
     line-height: 1.6;

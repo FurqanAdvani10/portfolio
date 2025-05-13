@@ -1,17 +1,16 @@
 import './work.css'
 
 const Work = () => {
+
     const works = [
-        { id: 1, src: 'web1.jpg', title: 'Project Alpha', category: 'Web Development', navigator: '/alpha' },
-        { id: 2, src: 'web2.jpg', title: 'Project Beta', category: 'Web Development', navigator: '/beta' },
-        { id: 3, src: 'web3.jpg', title: 'Project Gamma', category: 'Web Development', navigator: '/gamma' },
-        { id: 4, src: 'web4.jpg', title: 'Project Delta', category: 'Web Development', navigator: '/delta' },
-        { id: 5, src: 'web4.jpg', title: 'Project Delta', category: 'Web Development', navigator: '/delta' },
-        { id: 6, src: 'web4.jpg', title: 'Project Delta', category: 'Web Development', navigator: '/delta' },
-        { id: 7, src: 'web4.jpg', title: 'Project Delta', category: 'Web Development', navigator: '/delta' },
-        { id: 8, src: 'web4.jpg', title: 'Project Delta', category: 'Web Development', navigator: '/delta' },
-        { id: 8, src: 'web4.jpg', title: 'Project Delta', category: 'Web Development', navigator: '/delta' },
-        // ... add more if needed
+        { id: 1, src: 'travelnmemories.png', title: 'TravelnMemories', category: 'Tour Booking', navigator: 'https://www.travelnmemories.com/' },
+        { id: 2, src: 'cavecons.png', title: 'Cave Counselling', category: 'Counselling', navigator: 'https://cavecounselling.com/' },
+        { id: 3, src: 'futureTrading.png', title: 'Future Trading', category: 'Trading', navigator: 'https://future-trading-psi.vercel.app/' },
+        { id: 4, src: 'stlc.png', title: 'Stlc', category: 'Tuition', navigator: 'https://stlc-co.vercel.app/' },
+        { id: 5, src: 'gethikma1.png', title: 'Gethikma', category: 'Tuition', navigator: 'https://gethikma.vercel.app' },
+        { id: 6, src: 'chessapp.png', title: 'Chess Store', category: 'Store', navigator: 'https://chess-app-qb47.vercel.app/' },
+        { id: 7, src: 'desertsafari.png', title: 'Desert Safari ', category: 'Booking App', navigator: 'https://desert-safari-weld.vercel.app/' },
+        { id: 8, src: 'rfq.png', title: 'Rfq Travel', category: 'Umrah & Hajj Booking', navigator: 'https://rfq2.vercel.app/' },
     ];
 
     const images = import.meta.glob('../../assets/**/*', { eager: true });
@@ -55,7 +54,10 @@ const Work = () => {
                                         <h3>{item.title}</h3>
                                     </div>
                                     <div className="work-card-icon">
-                                        <i className="ri-arrow-right-line"></i>
+                                        <a href={`${item?.navigator}`} target="_blank">
+                                            <i className="ri-arrow-right-line">
+                                            </i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

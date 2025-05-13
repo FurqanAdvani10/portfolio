@@ -93,7 +93,6 @@ const ServicesCards = () => {
           </div>
         </div>
 
-        {/* Social Media, Work Together, Info Sections */}
       </div>
         <MainThird />
     </div>
