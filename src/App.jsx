@@ -1,10 +1,23 @@
-import { Suspense } from 'react'
-import './App.css'
-import { CLoader, Footer, Header } from './components'
-import { About, Contact, Home, Services, Work } from './pages'
-import { Route, Routes } from 'react-router-dom'
+import { useState, useEffect, Suspense } from 'react';
+import './App.css';
+import { CLoader, Footer, Header } from './components';
+import { About, Contact, Home, Services, Work } from './pages';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
+  const [showLoader, setShowLoader] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLoader(false);
+    }, 4500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (showLoader) {
+    return <CLoader />;
+  }
 
   return (
     <>
@@ -21,9 +34,10 @@ function App() {
           <Route path="*" element={<Home />} />
         </Routes>
       </Suspense>
+
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

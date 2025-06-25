@@ -16,10 +16,10 @@ const MainThird = () => {
     return (
         <div className='third-main mt-20'>
             <div className="container">
-                <div className="row g-4 justify-content-center row-cols-xl-2 row-cols-md-2 row-cols-1">
+                <div className="row g-4 justify-content-center row-cols-xl-2 row-cols-md-1 row-cols-1">
                     <div className="col">
                         <div className="items-card hover-effect d-flex flex-column">
-                            <div className="row g-3 row-cols-xl-3 row-cols-lg-3 row-cols-1 ">
+                            <div className="row g-3 row-cols-xl-3 row-cols-lg-3 row-cols-md-3 row-cols-1 ">
                                 {items.map((item, index) =>
                                     <div className="col" key={index}>
                                         <div className="item-box d-flex justify-content-center align-items-center">
